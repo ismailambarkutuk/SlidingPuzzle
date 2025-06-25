@@ -63,3 +63,10 @@ java SlidingPuzzle.btn
 - Name: Metehan Kartop
 - Email: metehan.kartop@tedu.edu.tr
 - Note: This project was created for educational purposes.
+
+## Contributors
+
+- [İsmail Ambarkütük](https://github.com/ismailambarkutuk)
+- [Emre Erdem](https://github.com/EmreErdem07)
+- [Metehan Kartop](https://github.com/metehankartop)
+- [Tuna Bekiş]()
