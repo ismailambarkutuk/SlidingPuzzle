@@ -156,10 +156,10 @@ public class btn extends JButton implements MouseListener {
             public void actionPerformed(ActionEvent e) {
             	JFrame ref = new JFrame("References");
             	ref.setLayout(null);
-            	JLabel tuna = new JLabel("Tuna Bekiþ");
+            	JLabel tuna = new JLabel("Tuna BekiÅŸ");
             	JLabel emre = new JLabel("Emre Erdem");
             	JLabel metehan = new JLabel("Metehan Kartop");
-            	JLabel ismail = new JLabel("Ýsmail Ambarkütük");
+            	JLabel ismail = new JLabel("Ä°smail AmbarkÃ¼tÃ¼k");
             	JLabel gpt = new JLabel("Chat GPT version 3.5");
             	ref.setResizable(false);
             	ref.setVisible(true);
@@ -400,9 +400,9 @@ public class btn extends JButton implements MouseListener {
         }
         if (m) {
             JFrame congrats = new JFrame();
-            /*ImageIcon ikon = new ImageIcon("\"C:\\Users\\ismai\\OneDrive\\Masaüstü\\images.jpeg\"");
+            /*ImageIcon ikon = new ImageIcon("\"C:\\Users\\ismai\\OneDrive\\Masaï¿½stï¿½\\images.jpeg\"");
             congrats.setIconImage(ikon.getImage());*/
-        	ImageIcon imageIcon1 = new ImageIcon("C:\\Users\\ismai\\OneDrive\\Masaüstü\\SlidingPuzzleImages\\choosePicture1.jpg");
+        	ImageIcon imageIcon1 = new ImageIcon("C:\\Users\\ismai\\OneDrive\\Masaï¿½stï¿½\\SlidingPuzzleImages\\choosePicture1.jpg");
             Image image1 = imageIcon1.getImage();
             
             congrats.setSize(400, 200); // Pencere boyutu
@@ -448,7 +448,7 @@ public class btn extends JButton implements MouseListener {
     }
 
     public void createPuzzle() {
-        ImageIcon ikon = new ImageIcon("\"C:\\Users\\ismai\\OneDrive\\Masaüstü\\SlidingPuzzleImages\\choosePicture2.jpg\"");
+        ImageIcon ikon = new ImageIcon("\"C:\\Users\\ismai\\OneDrive\\Masaï¿½stï¿½\\SlidingPuzzleImages\\choosePicture2.jpg\"");
         frame.setIconImage(ikon.getImage());
 
 
@@ -628,31 +628,31 @@ public class btn extends JButton implements MouseListener {
     	ImageIcon imageIcon = img;
     	Image image = imageIcon.getImage();
     	
-    	// Parça sayýsýný belirle
+    	// Parï¿½a sayï¿½sï¿½nï¿½ belirle
         int size = this.sizeCol;
 
-        // Resmin boyutlarýna göre parçalarý hesapla
+        // Resmin boyutlarï¿½na gï¿½re parï¿½alarï¿½ hesapla
         int parcaGenislik = imageIcon.getIconWidth() / size;
         int parcaYukseklik = imageIcon.getIconHeight() / size;
 
-        // Her bir parça için ImageIcon dizisi oluþtur
+        // Her bir parï¿½a iï¿½in ImageIcon dizisi oluï¿½tur
         ImageIcon[][] imageIconParca = new ImageIcon[size][size];
 
-        // Parçalarý oluþtur
+        // Parï¿½alarï¿½ oluï¿½tur
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                // Her bir parçayý BufferedImage olarak oluþtur
+                // Her bir parï¿½ayï¿½ BufferedImage olarak oluï¿½tur
                 BufferedImage imageBuf = new BufferedImage(parcaGenislik, parcaYukseklik, BufferedImage.TYPE_INT_ARGB);
 
-                // Her bir parçayý ana resimden alarak kopyala
+                // Her bir parï¿½ayï¿½ ana resimden alarak kopyala
                 Graphics2D g2d = imageBuf.createGraphics();
                 g2d.drawImage(image, 0, 0, parcaGenislik, parcaYukseklik, parcaGenislik * j, parcaYukseklik * i, parcaGenislik * (j + 1), parcaYukseklik * (i + 1), null);
                 g2d.dispose();
 
-                // Oluþturulan BufferedImage'ý ImageIcon'a dönüþtür ve parça dizisine ekle
+                // Oluï¿½turulan BufferedImage'ï¿½ ImageIcon'a dï¿½nï¿½ï¿½tï¿½r ve parï¿½a dizisine ekle
                 imageIconParca[i][j] = new ImageIcon(imageBuf);
 
-                // Board üzerindeki butonlara parçalarý ekle
+                // Board ï¿½zerindeki butonlara parï¿½alarï¿½ ekle
                 board[i][j].setIcon(imageIconParca[i][j]);
             }
         }
