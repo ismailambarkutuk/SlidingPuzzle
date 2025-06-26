@@ -69,4 +69,4 @@ java SlidingPuzzle.btn
 - [İsmail Ambarkütük](https://github.com/ismailambarkutuk)
 - [Emre Erdem](https://github.com/EmreErdem07)
 - [Metehan Kartop](https://github.com/metehankartop)
-- [Tuna Bekiş]()
+- [Tuna Bekiş](https://github.com/tunabekis)
